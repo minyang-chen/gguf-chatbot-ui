@@ -1,8 +1,10 @@
-# LLama_CPP_Chatbot UI
+# GGUF_Chatbot UI
 
-Chatbot UI is folk of an open source chat UI for LLama_CPP GGUF AI models.
+GGUF Chatbot UI is folk of an open source [chatbot UI](https://github.com/mckaywrigley/chatbot-ui.git) for Openai ChatGPT like experience. 
 
-See a [Original ChatBot UI demo](https://twitter.com/mckaywrigley/status/1640380021423603713?s=46&t=AowqkodyK6B4JccSOxSPew).
+Support all open source model quantized in GGUF file format including Llama2, Mistral and Zephyr running in Llama_cpp openai server serving.
+
+See a original [ChatBot UI demo](https://twitter.com/mckaywrigley/status/1640380021423603713?s=46&t=AowqkodyK6B4JccSOxSPew).
 
 ![Chatbot UI](./public/screenshots/screenshot-0402023.jpg)
 
