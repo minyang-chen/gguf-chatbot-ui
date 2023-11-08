@@ -51,6 +51,14 @@ const handler = async (req: Request): Promise<Response> => {
     const models: OpenAIModel[] = json.data
       .map((model: any) => {
         const model_name = (OPENAI_API_TYPE === 'azure') ? model.model : model.id;
+        //handle llama_cpp server with single gguf file model        
+        if (model_name.toLowerCase().endsWith(".gguf")) {
+          return {
+            id: model.id,
+            name: model.id,
+            owned_by:model.owned_by
+          };
+        }        
         for (const [key, value] of Object.entries(OpenAIModelID)) {
           if (value === model_name) {
             return {
